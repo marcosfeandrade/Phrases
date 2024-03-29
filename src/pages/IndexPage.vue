@@ -3,7 +3,7 @@
     <q-img class="img-icon" src="https://cdn.icon-icons.com/icons2/1515/PNG/512/quote_105126.png" spinner-color="white"
       style="height: auto; max-width: 150px" />
     <div clas="phrase-container">
-      <h5 class="phrase text-center">{{ phrases[index] }}</h5>
+      <h5 class="phrase text-center">“{{ phrases[index] }}”</h5>
       <span class="author text-accent">— {{ authors[index] ? authors[index] : "desconhecido" }}</span>
     </div>
     <q-btn class="button" color="secondary" icon="autorenew" @click="randomPhrase" label="Randomize" />
@@ -86,6 +86,7 @@ export default {
 .author {
   margin-left: 55%;
   font-weight: 450;
+  font-size: 1.1rem;
   color: #474747
 }
 
